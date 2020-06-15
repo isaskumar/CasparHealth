@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [test]" parallel="methods">
+  <listeners>
+    <listener class-name="caspars.qa.base.lib.Logs"/>
+  </listeners>
+  <test thread-count="1" verbose="10" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="caspars.qa.base.testcases.TestCasesAndroid">
+        <methods>
+          <include name="close"/>
+          <include name="BTC_001_Android_Mobie_SmartMobile_Check_the_functionality_of_knowledge"/>
+          <include name="closeTest"/>
+          <include name="setup"/>
+          <include name="before"/>
+          <include name="postsuite"/>
+        </methods>
+      </class> <!-- caspars.qa.base.testcases.TestCasesAndroid -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [test] -->

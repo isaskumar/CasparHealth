@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="10" name="test" parallel="true" thread-count="1">
+
+	<listeners>
+<listener class-name="caspars.qa.base.lib.Logs"/>
+	</listeners>
+
+		
+		
+
+	 <test name="Test" preserve-order="true">
+	<!--<parameter name="APK_NAME" value="na"/>
+  	<parameter name="APP_PATH" value="na"/>
+  	<parameter name="BROWSER" value="na"/>
+  	<parameter name="DEVICE" value="32000b984ef24643"/>
+  	<parameter name="EXECUTION_ENVIRONMENT" value="REMOTE"/>
+  	<parameter name="PLATFORM" value="NATIVE"/>
+  	<parameter name="PROP_FILE" value="/caspers.properties"/>
+  	<parameter name="SERVER_URL" value="http://0.0.0.0:4723"/>
+  	<parameter name="START_URL" value="na"/>
+  	<parameter name="START_URLs" value="na"/>
+  	<parameter name="SUITEXML" value="TestSuites\0Testing\LOCAL_TEST_REMOTE_ENV.xml"/>
+  	<parameter name="UDID" value="na"/>  -->
+  	
+		<classes>
+			<class name="caspars.qa.base.testcases.TestCasesAndroid">
+				<methods>
+					<include name="BTC_001_Android_Mobie_SmartMobile_Check_the_functionality_of_knowledge" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
